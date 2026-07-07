@@ -5,15 +5,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      -name: Download Repository
-       uses: actions/checkout@v4
-      -name: Install Python
-       uses: actions/setup-python@v5
-       with:
+      - name: Download Repository
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
           python--version:"3.11"
       
-      -name: Install Packages
-       run: pip install -r requirements.txt
+      - name: Install Packages
+        run: pip install -r requirements.txt
       
-      -name: Run Tests
-       run: pytest
+      - name: Run Tests
+        run: pytest
