@@ -9,4 +9,4 @@ def test_sub():
     assert substraction(10,5) == 5
 
 def test_mul():
-    assert multiplication(2,5) == 14
+    assert multiplication(2,5) == 10
